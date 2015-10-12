@@ -1,0 +1,5 @@
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.MemoryDb.Tests\bin\Debug\Wdf.MemoryDb.Tests.dll
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.MemoryDb.Tests\bin\Debug\Wdf.MemoryDb.Tests.pdb
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.MemoryDb.Tests\obj\Debug\Wdf.MemoryDb.Tests.csprojResolveAssemblyReference.cache
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.MemoryDb.Tests\obj\Debug\Wdf.MemoryDb.Tests.dll
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.MemoryDb.Tests\obj\Debug\Wdf.MemoryDb.Tests.pdb

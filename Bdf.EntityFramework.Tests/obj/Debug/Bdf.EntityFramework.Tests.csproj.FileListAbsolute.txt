@@ -1,0 +1,5 @@
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.EntityFramework.Tests\bin\Debug\Wdf.EntityFramework.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.EntityFramework.Tests\bin\Debug\Wdf.EntityFramework.Tests.pdb
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Bdf.EntityFramework.Tests.csprojResolveAssemblyReference.cache
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Wdf.EntityFramework.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Wdf.EntityFramework.Tests.pdb

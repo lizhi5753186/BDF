@@ -1,0 +1,5 @@
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\bin\Debug\Wdf.Tests.Common.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\bin\Debug\Wdf.Tests.Common.pdb
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Bdf.Tests.Common.csprojResolveAssemblyReference.cache
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.pdb

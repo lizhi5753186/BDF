@@ -1,0 +1,4 @@
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.NHibernate.Tests\bin\Debug\Wdf.NHibernate.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.NHibernate.Tests\bin\Debug\Wdf.NHibernate.Tests.pdb
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.NHibernate.Tests\obj\Debug\Wdf.NHibernate.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.NHibernate.Tests\obj\Debug\Wdf.NHibernate.Tests.pdb

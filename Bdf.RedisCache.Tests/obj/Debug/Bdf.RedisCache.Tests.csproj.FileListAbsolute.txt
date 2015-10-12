@@ -1,0 +1,4 @@
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.RedisCache.Tests\bin\Debug\Wdf.RedisCache.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.RedisCache.Tests\bin\Debug\Wdf.RedisCache.Tests.pdb
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.RedisCache.Tests\obj\Debug\Wdf.RedisCache.Tests.dll
+F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.RedisCache.Tests\obj\Debug\Wdf.RedisCache.Tests.pdb
