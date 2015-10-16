@@ -1,4 +1,0 @@
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.NHibernate.Tests\bin\Debug\Wdf.NHibernate.Tests.dll
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.NHibernate.Tests\bin\Debug\Wdf.NHibernate.Tests.pdb
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.NHibernate.Tests\obj\Debug\Wdf.NHibernate.Tests.dll
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.NHibernate.Tests\obj\Debug\Wdf.NHibernate.Tests.pdb

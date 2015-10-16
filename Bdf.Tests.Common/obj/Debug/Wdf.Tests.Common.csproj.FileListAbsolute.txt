@@ -1,5 +1,0 @@
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.Tests.Common\bin\Debug\Wdf.Tests.Common.dll
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.Tests.Common\bin\Debug\Wdf.Tests.Common.pdb
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.csprojResolveAssemblyReference.cache
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.dll
-F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.pdb
