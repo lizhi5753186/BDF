@@ -165,7 +165,7 @@
     <Compile Include="Events\Bus\EventBus.cs" />
     <Compile Include="Events\Bus\EventData.cs" />
     <Compile Include="Events\Bus\Exceptions\ExceptionData.cs" />
-    <Compile Include="Events\Bus\Exceptions\WdfHandledExceptionData.cs" />
+    <Compile Include="Events\Bus\Exceptions\BdfHandledExceptionData.cs" />
     <Compile Include="Events\Bus\Factories\IEventHandlerFactory.cs" />
     <Compile Include="Events\Bus\Factories\Internals\FactoryUnregistrar.cs" />
     <Compile Include="Events\Bus\Factories\Internals\SingleInstanceHandlerFactory.cs" />
