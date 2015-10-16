@@ -12,7 +12,7 @@ namespace Bdf.Events.Bus.Installers
     /// <summary>
     /// Installs event bus system and registers all handlers automatically.
     /// </summary>
-    internal class EventBusInstaller : IWindsorInstaller
+    public class EventBusInstaller : IWindsorInstaller
     {
         private readonly IIocResolver _iocResolver;
         private readonly IEventBusConfiguration _eventBusConfiguration;

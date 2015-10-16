@@ -3,3 +3,8 @@ F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\bin\Debug\Wdf.Tests.C
 F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Bdf.Tests.Common.csprojResolveAssemblyReference.cache
 F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.dll
 F:\Study\C#\CnblogSample\DDDFramework\Wdf\Wdf.Tests.Common\obj\Debug\Wdf.Tests.Common.pdb
+Z:\Study\BDF\BDF\Bdf.Tests.Common\obj\Debug\Bdf.Tests.Common.csprojResolveAssemblyReference.cache
+Z:\Study\BDF\BDF\Bdf.Tests.Common\bin\Debug\Bdf.Tests.Common.dll
+Z:\Study\BDF\BDF\Bdf.Tests.Common\bin\Debug\Bdf.Tests.Common.pdb
+Z:\Study\BDF\BDF\Bdf.Tests.Common\obj\Debug\Bdf.Tests.Common.dll
+Z:\Study\BDF\BDF\Bdf.Tests.Common\obj\Debug\Bdf.Tests.Common.pdb

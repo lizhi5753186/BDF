@@ -2,7 +2,7 @@
 using Bdf.Dependency;
 namespace Bdf.Uow
 {
-    internal class UnitOfWorkManager : IUnitOfWorkManager, ITransientDependency
+    public class UnitOfWorkManager : IUnitOfWorkManager, ITransientDependency
     {
         private readonly IIocResolver _iocResolver;
         private readonly ICurrentUnitOfWorkProvider _currentUnitOfWorkProvider;

@@ -9,13 +9,21 @@ namespace Bdf.Domain.Entities
         #region Override Object Members
         public override bool Equals(object obj)
         {
-            if (obj == null || !(obj is Entity<TPrimaryKey>))
+            if (!(obj is Entity<TPrimaryKey>))
                 return false;
            
+            // Same intances must be considerd as equal
             if (ReferenceEquals(this, obj))
                 return true;
 
             var other = (Entity<TPrimaryKey>)obj;
+
+            // Must have a IS-A relation of types or must be same type
+            var typeOfThis = GetType();
+            var typeOfOther = other.GetType();
+            if (!typeOfThis.IsAssignableFrom(typeOfOther) && !typeOfOther.IsAssignableFrom(typeOfThis))
+                return false;
+
             return Id.Equals(other.Id);
         }
 

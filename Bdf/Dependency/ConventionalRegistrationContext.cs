@@ -2,7 +2,7 @@
 
 namespace Bdf.Dependency
 {
-    internal class ConventionalRegistrationContext : IConventionalRegistrationContext
+    public class ConventionalRegistrationContext : IConventionalRegistrationContext
     {
         public Assembly Assembly { get; private set; }
 
@@ -12,7 +12,7 @@ namespace Bdf.Dependency
 
         public ConventionalRegistrationConfig Config  { get; private set; }
 
-        internal ConventionalRegistrationContext(Assembly assembly, IIocManager iocManager, ConventionalRegistrationConfig config)
+        public ConventionalRegistrationContext(Assembly assembly, IIocManager iocManager, ConventionalRegistrationConfig config)
         {
             Assembly = assembly;
             IocManager = iocManager;

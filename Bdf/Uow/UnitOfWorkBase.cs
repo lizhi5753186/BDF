@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
+using Bdf.Extensions;
+using Bdf.Runtime.Session;
 
 namespace Bdf.Uow
 {
+    /// <summary>
+    /// Base for all Unit of Work classes.
+    /// </summary>
     public abstract class UnitOfWorkBase : IUnitOfWork
     {
         public string Id { get; private set; }
@@ -26,7 +31,15 @@ namespace Bdf.Uow
         }
         private readonly List<DataFilterConfiguration> _filters;
 
+        /// <summary>
+        /// Get a value indicates that this unit of work is diposed or not.
+        /// </summary>
         public bool IsDisposed { get; private set; }
+
+        /// <summary>
+        /// Reference to current ABP session.
+        /// </summary>
+        public IBdfSession BdfSession { private get; set; }
 
         /// <summary>
         /// Is <see cref="Begin"/> method called before?
@@ -52,6 +65,7 @@ namespace Bdf.Uow
         {
             Id = Guid.NewGuid().ToString("N");
             _filters = defaultOptions.Filters.ToList();
+            BdfSession = NullBdfSession.Instance;
         }
 
         public void Begin(UnitOfWorkOptions options)
@@ -236,18 +250,29 @@ namespace Bdf.Uow
             throw new NotImplementedException("EnableFilter is not implemented for " + GetType().FullName);
         }
 
+        /// <summary>
+        /// Called to trigger <see cref="Completed"/> event.
+        /// </summary>
         protected virtual void OnCompleted()
         {
-            
+            Completed.InvokeSafely(this);
         }
 
-
+        /// <summary>
+        /// Call to trigger <see cref="Failed"/> event.
+        /// </summary>
+        /// <param name="exception">Exception that case failure</param>
         protected virtual void OnFailed(Exception exception)
         {
+            Failed.InvokeSafely(this, new UnitOfWorkFailedEventArgs(exception));
         }
 
+        /// <summary>
+        /// Called to trigger <see cref="Disposed"/> event.
+        /// </summary>
         protected virtual void OnDisposed()
         {
+            Disposed.InvokeSafely(this);
         }
 
 

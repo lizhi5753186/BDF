@@ -7,8 +7,8 @@
     <ProjectGuid>{B8E92F9A-B7CA-4148-B3CA-579D1EA16586}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wdf.MemoryDb</RootNamespace>
-    <AssemblyName>Wdf.MemoryDb</AssemblyName>
+    <RootNamespace>Bdf.MemoryDb</RootNamespace>
+    <AssemblyName>Bdf.MemoryDb</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

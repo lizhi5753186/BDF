@@ -7,10 +7,11 @@
     <ProjectGuid>{1A8FD92F-A064-4138-99FB-6CE416FC0449}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wdf.Tests.Common</RootNamespace>
-    <AssemblyName>Wdf.Tests.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Bdf.Tests.Common</RootNamespace>
+    <AssemblyName>Bdf.Tests.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -6,6 +6,25 @@ namespace Bdf.Threading
 {
     public static class InternalAsyncHelper
     {
+        public static async Task AwaitTaskWithFinally(Task actualReturnValue, Action<Exception> finalAction)
+        {
+            Exception exception = null;
+
+            try
+            {
+                await actualReturnValue;
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+                throw;
+            }
+            finally
+            {
+                finalAction(exception);
+            }
+        }
+
         public static async Task AwaitTaskWithPostActionAndFinally(Task actualReturnValue, Func<Task> postAction, Action<Exception> finalAction)
         {
             Exception exception = null;

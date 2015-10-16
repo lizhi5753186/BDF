@@ -6,7 +6,7 @@ using Bdf.Domain.Repositories;
 
 namespace Bdf.NHibernate.Repositories
 {
-    internal class NhRepositoryInstaller : IWindsorInstaller
+    public class NhRepositoryInstaller : IWindsorInstaller
     {
         private readonly ISessionFactory _sessionFactory;
 

@@ -40,12 +40,7 @@ namespace Bdf.EntityFramework.Dependency
                 }
             }
 
-            if (ConfigurationManager.ConnectionStrings["Default"] != null)
-            {
-                return "Default";
-            }
-
-            return null;
+            return ConfigurationManager.ConnectionStrings["Default"] != null ? "Default" : null;
         }
     }
 }
