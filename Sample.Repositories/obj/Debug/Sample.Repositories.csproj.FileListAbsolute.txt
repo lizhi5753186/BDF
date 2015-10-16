@@ -1,0 +1,5 @@
+Z:\Study\BDF\BDF\Sample.Repositories\bin\Debug\Sample.Repositories.dll
+Z:\Study\BDF\BDF\Sample.Repositories\bin\Debug\Sample.Repositories.pdb
+Z:\Study\BDF\BDF\Sample.Repositories\obj\Debug\Sample.Repositories.csprojResolveAssemblyReference.cache
+Z:\Study\BDF\BDF\Sample.Repositories\obj\Debug\Sample.Repositories.dll
+Z:\Study\BDF\BDF\Sample.Repositories\obj\Debug\Sample.Repositories.pdb
