@@ -1,0 +1,5 @@
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.EntityFramework.Tests\bin\Debug\Wdf.EntityFramework.Tests.dll
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.EntityFramework.Tests\bin\Debug\Wdf.EntityFramework.Tests.pdb
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Wdf.EntityFramework.Tests.csprojResolveAssemblyReference.cache
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Wdf.EntityFramework.Tests.dll
+F:\Study\C#\博客园中例子\DDD框架\Wdf\Wdf.EntityFramework.Tests\obj\Debug\Wdf.EntityFramework.Tests.pdb
