@@ -36,11 +36,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bdf.NHibernate.Tests", "Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22E420DB-D00E-4C85-AB97-2282727DB173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bdf.Sample.Domain", "Bdf.Sample.Domain\Bdf.Sample.Domain.csproj", "{5AC7569E-54F3-45C8-9529-CFA514102859}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bdf.Sample.Domain", "Sample\Bdf.Sample.Domain\Bdf.Sample.Domain.csproj", "{5AC7569E-54F3-45C8-9529-CFA514102859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application", "Sample.Application\Sample.Application.csproj", "{C9F59014-1212-484D-92F1-F47353CFAF8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application", "Sample\Sample.Application\Sample.Application.csproj", "{C9F59014-1212-484D-92F1-F47353CFAF8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Repositories", "Sample.Repositories\Sample.Repositories.csproj", "{DCEFE104-1F00-4CD8-87CA-425C55A40D8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Repositories", "Sample\Sample.Repositories\Sample.Repositories.csproj", "{DCEFE104-1F00-4CD8-87CA-425C55A40D8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

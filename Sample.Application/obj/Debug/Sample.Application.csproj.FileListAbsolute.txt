@@ -1,5 +1,0 @@
-Z:\Study\BDF\BDF\Sample.Application\bin\Debug\Sample.Application.dll
-Z:\Study\BDF\BDF\Sample.Application\bin\Debug\Sample.Application.pdb
-Z:\Study\BDF\BDF\Sample.Application\obj\Debug\Sample.Application.csprojResolveAssemblyReference.cache
-Z:\Study\BDF\BDF\Sample.Application\obj\Debug\Sample.Application.dll
-Z:\Study\BDF\BDF\Sample.Application\obj\Debug\Sample.Application.pdb
