@@ -9,7 +9,7 @@ namespace Bdf.Sample.Domain.Model
 
         public virtual Product Product { get; set; }
 
-        public virtual ShoppingCart ShoopingCart { get; set; }
+        public virtual ShoppingCart ShoppingCart { get; set; }
 
         public decimal ItemAmount
         {

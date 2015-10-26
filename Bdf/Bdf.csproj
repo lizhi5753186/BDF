@@ -152,6 +152,7 @@
     <Compile Include="Domain\Repositories\IRepository.cs" />
     <Compile Include="Domain\Repositories\IRepositoryWithTEntity.cs" />
     <Compile Include="Domain\Repositories\IRepositoryWithTEntityAndTPrimaryKey.cs" />
+    <Compile Include="Domain\Repositories\SortOrder.cs" />
     <Compile Include="Domain\Services\DomainService.cs" />
     <Compile Include="Domain\Services\IDomainService.cs" />
     <Compile Include="Events\Bus\Entities\DefaultEntityChangedEventHelper.cs" />

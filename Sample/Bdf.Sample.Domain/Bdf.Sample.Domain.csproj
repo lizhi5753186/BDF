@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainException.cs" />
     <Compile Include="Events\EventHandlers\OrderConfirmedEventHandler.cs" />
     <Compile Include="Events\EventHandlers\OrderDispatchedEventHandler.cs" />
     <Compile Include="Events\OrderConfirmedEvent.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Repositories\IUserRoleRepository.cs" />
     <Compile Include="Repositories\SortOrder.cs" />
+    <Compile Include="Services\DomainServiceExtensions.cs" />
     <Compile Include="Services\SampleDomainService.cs" />
   </ItemGroup>
   <ItemGroup>

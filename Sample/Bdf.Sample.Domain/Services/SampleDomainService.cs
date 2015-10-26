@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using Bdf.Domain.Services;
 using Bdf.Sample.Domain.Model;
 using Bdf.Sample.Domain.Repositories;
+using Bdf.Uow;
 
 namespace Bdf.Sample.Domain.Services
 {
@@ -20,11 +21,7 @@ namespace Bdf.Sample.Domain.Services
         public SampleDomainService(
             IOrderRepository orderRepository, 
             IShoppingCartItemRepository shoppingCartItemRepository, 
-            ICategoryRepository categoryRepository, 
             IProductCategorizationRepository productCategorizationRepository,
-            IProductRepository productRepository, 
-            IUserRepository userRepository, 
-            IRoleRepository roleRepository, 
             IUserRoleRepository userRoleRepository)
         {
             _orderRepository = orderRepository;
@@ -35,14 +32,14 @@ namespace Bdf.Sample.Domain.Services
 
         #endregion 
        
-       
+         [UnitOfWork]
         public Order CreateOrder(User user, ShoppingCart shoppingCart)
         {
             var order = new Order();
             var shoppingCartItems =
-                _shoppingCartItemRepository.GetAllList(s => s.ShoopingCart.Id == shoppingCart.Id);
+                _shoppingCartItemRepository.GetAllList(s => s.ShoppingCart.Id == shoppingCart.Id);
             if (shoppingCartItems == null || !shoppingCartItems.Any())
-                throw new InvalidOperationException("购物篮中没有任何物品");
+                throw new InvalidOperationException("Shopping Cart have not any item");
 
             order.OrderItems = new List<OrderItem>();
             foreach (var shoppingCartItem in shoppingCartItems)
@@ -55,10 +52,10 @@ namespace Bdf.Sample.Domain.Services
             order.User = user;
             order.Status = OrderStatus.Paid;
             _orderRepository.Insert(order);
-            //_repositoryContext.Commit();
             return order;
         }
 
+        [UnitOfWork]
         public ProductCategorization Categorize(Product product, Category category)
         {
             if(product == null)
@@ -67,7 +64,7 @@ namespace Bdf.Sample.Domain.Services
                 throw new ArgumentNullException("category");
 
             var productCategorization =
-                _productCategorizationRepository.FirstOrDefault(c => c.ProductId == product.Id);
+                _productCategorizationRepository.FirstOrDefault(c => c.Product.Id == product.Id);
             if (productCategorization == null)
             {
                 productCategorization = ProductCategorization.CreateCategorization(product, category);
@@ -75,31 +72,29 @@ namespace Bdf.Sample.Domain.Services
             }
             else
             {
-                productCategorization.CategoryId = category.Id;
+                productCategorization.Category.Id = category.Id;
                 _productCategorizationRepository.Update(productCategorization);
             }
 
-            //_repositoryContext.Commit();
             return productCategorization;
         }
 
-        // 将指定的商品从其所属的商品分类中移除
+         [UnitOfWork]
         public void Uncategorize(Product product, Category category = null)
         {
             Expression<Func<ProductCategorization, bool>> specExpress = null
                 ;
             if (category == null)
-                specExpress = p => p.ProductId == product.Id;
+                specExpress = p => p.Product.Id == product.Id;
             else
-                specExpress = p => p.ProductId == product.Id && p.CategoryId == category.Id;
+                specExpress = p => p.Product.Id == product.Id && p.Category.Id == category.Id;
             var productCategorization = _productCategorizationRepository.FirstOrDefault(specExpress);
             if (productCategorization == null) return;
 
             _productCategorizationRepository.Delete(productCategorization);
-            //_repositoryContext.Commit();
         }
 
-        // 将指定的用户赋予特定的角色。
+        [UnitOfWork]
         public UserRole AssignRole(User user, Role role)
         {
             if (user == null)
@@ -118,11 +113,10 @@ namespace Bdf.Sample.Domain.Services
                 _userRoleRepository.Update(userRole);
             }
 
-            //_repositoryContext.Commit();
             return userRole;
         }
 
-        // 将指定的用户从角色中移除。
+         [UnitOfWork]
         public void UnassignRole(User user, Role role = null)
         {
             if (user == null)
@@ -138,7 +132,6 @@ namespace Bdf.Sample.Domain.Services
             if (userRole == null) return;
 
             _userRoleRepository.Delete(userRole);
-            //_repositoryContext.Commit();
         }
     }
 }

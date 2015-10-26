@@ -46,5 +46,24 @@ namespace Bdf.Sample.Domain.Model
         {
             return this.UserName;
         }
+
+        #region Public Methods
+
+        public void Disable()
+        {
+            this.IsDeleted = true;
+        }
+
+        public void Enable()
+        {
+            this.IsDeleted = false;
+        }
+
+        public ShoppingCart CreateShoppingCart()
+        {
+            var shoppingCart = new ShoppingCart { User = this };
+            return shoppingCart;
+        }
+        #endregion 
     }
 }

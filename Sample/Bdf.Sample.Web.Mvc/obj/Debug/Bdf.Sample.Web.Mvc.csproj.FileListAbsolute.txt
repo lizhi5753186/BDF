@@ -220,9 +220,6 @@ Z:\Study\BDF\BDF\Bdf.Sample.Web.Mvc\bin\zh-Hans\Microsoft.Owin.Security.Microsof
 Z:\Study\BDF\BDF\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.csprojResolveAssemblyReference.cache
 Z:\Study\BDF\BDF\Bdf.Sample.Web.Mvc\obj\Debug\Wdf.Sample.Web.Mvc.dll
 Z:\Study\BDF\BDF\Bdf.Sample.Web.Mvc\obj\Debug\Wdf.Sample.Web.Mvc.pdb
-Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Wdf.Sample.Web.Mvc.dll.config
-Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Wdf.Sample.Web.Mvc.dll
-Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Wdf.Sample.Web.Mvc.pdb
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Microsoft.Web.Infrastructure.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Castle.Windsor.dll
@@ -280,5 +277,8 @@ Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\zh-Hans\Microsoft.Owin.Security.G
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.csprojResolveAssemblyReference.cache
-Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Wdf.Sample.Web.Mvc.dll
-Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Wdf.Sample.Web.Mvc.pdb
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Web.Mvc.dll.config
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Web.Mvc.dll
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Web.Mvc.pdb
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.dll
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.pdb

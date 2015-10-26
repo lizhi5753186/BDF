@@ -9,8 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sample.Application</RootNamespace>
     <AssemblyName>Sample.Application</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.0.4.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,9 +54,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressResolver.cs" />
+    <Compile Include="ApplicationServiceExtensions.cs" />
+    <Compile Include="DtoMappings.cs" />
+    <Compile Include="Dtos\Order\AddressDto.cs" />
+    <Compile Include="Dtos\Paged\Pagination.cs" />
+    <Compile Include="Dtos\Paged\ProductDtoWithPagination.cs" />
+    <Compile Include="Dtos\Product\CategoryDto.cs" />
+    <Compile Include="Dtos\Product\CreateCategoriesInput.cs" />
+    <Compile Include="Dtos\Product\DeleteCategoriesInput.cs" />
+    <Compile Include="Dtos\Product\DeleteProductsInput.cs" />
+    <Compile Include="Dtos\Product\GetCategoriesOutput.cs" />
+    <Compile Include="Dtos\Product\CreateProductsInput.cs" />
+    <Compile Include="Dtos\Order\GetOrdersOutput.cs" />
+    <Compile Include="Dtos\Product\GetProductsOutput.cs" />
+    <Compile Include="Dtos\Order\GetShoppingCartItemsOutput.cs" />
+    <Compile Include="Dtos\Order\GetShoppingCartOutput.cs" />
+    <Compile Include="Dtos\Order\OrderDto.cs" />
+    <Compile Include="Dtos\Order\OrderItemDto.cs" />
+    <Compile Include="Dtos\Order\OrderStatusDto.cs" />
+    <Compile Include="Dtos\Order\ProductCategorizationDto.cs" />
+    <Compile Include="Dtos\Product\ProductDto.cs" />
+    <Compile Include="Dtos\User\CreateRolesInput.cs" />
+    <Compile Include="Dtos\User\CreateUsersInput.cs" />
+    <Compile Include="Dtos\User\DeleteRolesInput.cs" />
+    <Compile Include="Dtos\User\DeleteUsersInput.cs" />
+    <Compile Include="Dtos\User\GetRolesOutput.cs" />
+    <Compile Include="Dtos\User\GetUsersOutput.cs" />
+    <Compile Include="Dtos\User\RoleDto.cs" />
+    <Compile Include="Dtos\Order\ShoppingCartDto.cs" />
+    <Compile Include="Dtos\Order\ShoppingCartItemDto.cs" />
+    <Compile Include="Dtos\Product\UpdateCategoriesInput.cs" />
+    <Compile Include="Dtos\Product\UpdateProductsInput.cs" />
+    <Compile Include="Dtos\User\UpdateRolesInput.cs" />
+    <Compile Include="Dtos\User\UpdateUsersInput.cs" />
+    <Compile Include="Dtos\User\UserDto.cs" />
+    <Compile Include="Imp\OrderServiceImp.cs" />
+    <Compile Include="Imp\ProductServiceImp.cs" />
+    <Compile Include="Imp\UserServiceImp.cs" />
+    <Compile Include="InversedAddressResolver.cs" />
+    <Compile Include="IOrderService.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bdf\Bdf.csproj">
+      <Project>{9f09d038-06a2-4725-988b-f8a674afa31e}</Project>
+      <Name>Bdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bdf.Sample.Domain\Bdf.Sample.Domain.csproj">
+      <Project>{5AC7569E-54F3-45C8-9529-CFA514102859}</Project>
+      <Name>Bdf.Sample.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Repositories\Sample.Repositories.csproj">
+      <Project>{dcefe104-1f00-4cd8-87ca-425c55a40d8b}</Project>
+      <Name>Sample.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

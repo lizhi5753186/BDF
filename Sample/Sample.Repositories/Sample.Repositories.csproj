@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sample.Repositories</RootNamespace>
     <AssemblyName>Sample.Repositories</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.0.1.27, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\mongocsharpdriver.2.0.1\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,7 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MongoDB\CategoryRepository.cs" />
+    <Compile Include="MongoDB\OrderRepository.cs" />
+    <Compile Include="MongoDB\ProductCategorizationRepository.cs" />
+    <Compile Include="MongoDB\ProductRepository.cs" />
+    <Compile Include="MongoDB\RoleRepository.cs" />
+    <Compile Include="MongoDB\ShoppingCartItemRepository.cs" />
+    <Compile Include="MongoDB\ShoppingCartRepository.cs" />
+    <Compile Include="MongoDB\SortExpressionHelper.cs" />
+    <Compile Include="MongoDB\UserRepository.cs" />
+    <Compile Include="MongoDB\UserRoleRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bdf.MongoDB\Bdf.MongoDb.csproj">
+      <Project>{63c7c9e6-944a-41e8-9013-19e9820cfc3a}</Project>
+      <Name>Bdf.MongoDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Bdf\Bdf.csproj">
+      <Project>{9F09D038-06A2-4725-988B-F8A674AFA31E}</Project>
+      <Name>Bdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bdf.Sample.Domain\Bdf.Sample.Domain.csproj">
+      <Project>{5ac7569e-54f3-45c8-9529-cfa514102859}</Project>
+      <Name>Bdf.Sample.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

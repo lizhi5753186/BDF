@@ -61,6 +61,7 @@ namespace Bdf.Sample.Domain.Model
 
         public void Dispatch()
         {
+
         }
     }
 }
