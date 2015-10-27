@@ -26,5 +26,13 @@ namespace Sample.Application.Dtos.Order
 
         public List<OrderItemDto> OrderItems { get; set; }
         public decimal? Subtotal { get; set; }
+
+        public bool CanConfirm
+        {
+            get
+            {
+                return this.Status != null && this.Status == OrderStatusDto.Dispatched;
+            }
+        }
     }
 }

@@ -282,3 +282,9 @@ Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Web.Mvc.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Web.Mvc.pdb
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.dll
 Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\obj\Debug\Bdf.Sample.Web.Mvc.pdb
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Domain.dll
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Sample.Application.dll
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\AutoMapper.dll
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Bdf.Sample.Domain.pdb
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\Sample.Application.pdb
+Z:\Study\BDF\BDF\Sample\Bdf.Sample.Web.Mvc\bin\AutoMapper.xml

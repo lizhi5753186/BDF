@@ -1,4 +1,6 @@
 ﻿using System.Security.Principal;
+using Bdf.Sample.Domain.Model;
+using Sample.Application;
 
 namespace Bdf.Sample.Web.API.Authorization
 {

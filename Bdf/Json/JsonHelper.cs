@@ -6,7 +6,7 @@ namespace Bdf.Json
     /// <summary>
     /// Josn Helper method
     /// </summary>
-    internal static class JsonHelper
+    public static class JsonHelper
     {
         public static string ConvertToJson(object obj, bool camelCase = false, bool indented = false)
         {
@@ -23,6 +23,11 @@ namespace Bdf.Json
             }
 
             return JsonConvert.SerializeObject(obj, options);
+        }
+
+        public static T ConvertJsonToObject<T>(string json)
+        {
+            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }

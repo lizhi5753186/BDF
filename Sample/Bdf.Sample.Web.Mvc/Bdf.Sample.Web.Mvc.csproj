@@ -156,22 +156,120 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SampleIdentity\SampleUser.cs" />
+    <Compile Include="SampleIdentity\SampleUserStore.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\UserAccountModel.cs" />
+    <Content Include="App_Code\HtmlExtension.cs" />
+    <None Include="App_Code\PermissionKeys.cs" />
+    <None Include="App_Code\UrlHelperExtension.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="MvcSiteMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup.cs" />
+    <Content Include="Content\uploadify.css" />
+    <Content Include="Content\uploadify.swf" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\Add2.png" />
+    <Content Include="Images\Admin_32.png" />
+    <Content Include="Images\afterlogo.jpg" />
+    <Content Include="Images\arrows-ffffff.png" />
+    <Content Include="Images\Back.png" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\category.jpg" />
+    <Content Include="Images\Category_32.png" />
+    <Content Include="Images\close.jpg" />
+    <Content Include="Images\CopyTo.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Disable.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\Enable.png" />
+    <Content Include="Images\footer.jpg" />
+    <Content Include="Images\hard.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\Logout.png" />
+    <Content Include="Images\menu.jpg" />
+    <Content Include="Images\menu_beforelogo.jpg" />
+    <Content Include="Images\newtovar.jpg" />
+    <Content Include="Images\onlinestore_logo.png" />
+    <Content Include="Images\op.jpg" />
+    <Content Include="Images\pic1.jpg" />
+    <Content Include="Images\pic2.jpg" />
+    <Content Include="Images\pic3.jpg" />
+    <Content Include="Images\pic4.jpg" />
+    <Content Include="Images\picap.jpg" />
+    <Content Include="Images\popular.jpg" />
+    <Content Include="Images\Products\01505235-35b1-4995-804b-a496fb0f81d6.jpg" />
+    <Content Include="Images\Products\040DA7EB-D670-4843-A364-6D961217957D.jpg" />
+    <Content Include="Images\Products\20762C83-A827-43AB-8589-DC88C22E6A01.jpg" />
+    <Content Include="Images\Products\4BE8C7BD-F23F-4CEA-A3A8-09999AEF85FB.jpg" />
+    <Content Include="Images\Products\554AB834-7677-4A51-9FC1-FC7C21021B5B.jpg" />
+    <Content Include="Images\Products\57D1705F-B98E-4E02-AA30-B5E6E46CAAD4.jpg" />
+    <Content Include="Images\Products\59e037f2-43a6-4fe7-87c3-b726b0ebdc9a.jpg" />
+    <Content Include="Images\Products\75615F17-A147-472D-BA60-D19D21FF7860.jpg" />
+    <Content Include="Images\Products\B416DAF4-59D7-462D-A0C2-45EBCE8D9A4D.jpg" />
+    <Content Include="Images\Products\BB1F735C-DFCE-4ECB-B9FC-720D15FB6080.jpg" />
+    <Content Include="Images\Products\BE93832B-A321-43B4-83B2-009C9947F981.jpg" />
+    <Content Include="Images\Products\D06909EC-4789-4478-9AC7-714B749B69FA.jpg" />
+    <Content Include="Images\Products\EB8FB8A3-411C-417F-BDC8-73D5401A977F.jpg" />
+    <Content Include="Images\Products\ProductImage.png" />
+    <Content Include="Images\Product_32.png" />
+    <Content Include="Images\Role_32.png" />
+    <Content Include="Images\SalesOrder_32.png" />
+    <Content Include="Images\Save.png" />
+    <Content Include="Images\shadow.png" />
+    <Content Include="Images\ShoppingCart.png" />
+    <Content Include="Images\ShoppingCart256.png" />
+    <Content Include="Images\ShoppingCart32.png" />
+    <Content Include="Images\ShoppingCart64.png" />
+    <Content Include="Images\spacer.jpg" />
+    <Content Include="Images\Success_32.png" />
+    <Content Include="Images\taling.jpg" />
+    <Content Include="Images\taling_center.jpg" />
+    <Content Include="Images\trash.jpg" />
+    <Content Include="Images\Update.png" />
+    <Content Include="Images\User_32.png" />
+    <Content Include="SiteMap.xml" />
+    <Content Include="Views\Shared\CategoriesPartial.cshtml" />
+    <Content Include="Views\Shared\NewProductsPartial.cshtml" />
+    <Content Include="Views\Shared\ProductsPartial.cshtml" />
+    <Content Include="Views\Home\Category.cshtml" />
+    <Content Include="Views\Home\Checkout.cshtml" />
+    <Content Include="Views\Home\Order.cshtml" />
+    <Content Include="Views\Home\Orders.cshtml" />
+    <Content Include="Views\Home\ProductDetail.cshtml" />
+    <Content Include="Views\Home\ShoppingCart.cshtml" />
+    <Content Include="Views\Home\SuccessPage.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Admin\AddCategory.cshtml" />
+    <Content Include="Views\Admin\AddProduct.cshtml" />
+    <Content Include="Views\Admin\AddRole.cshtml" />
+    <Content Include="Views\Admin\AddUserAccount.cshtml" />
+    <Content Include="Views\Admin\Administration.cshtml" />
+    <Content Include="Views\Admin\Categories.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\EditProduct.cshtml" />
+    <Content Include="Views\Admin\EditRole.cshtml" />
+    <Content Include="Views\Admin\EditUserAccount.cshtml" />
+    <Content Include="Views\Admin\Order.cshtml" />
+    <Content Include="Views\Admin\Orders.cshtml" />
+    <Content Include="Views\Admin\Products.cshtml" />
+    <Content Include="Views\Admin\Roles.cshtml" />
+    <Content Include="Views\Admin\UserAccounts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -219,30 +317,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admin\" />
+    <Folder Include="Images\Products\Large\" />
+    <Folder Include="Images\Products\Medium\" />
+    <Folder Include="Images\Products\Small\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -252,6 +333,14 @@
     <ProjectReference Include="..\..\Bdf\Bdf.csproj">
       <Project>{9f09d038-06a2-4725-988b-f8a674afa31e}</Project>
       <Name>Bdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bdf.Sample.Domain\Bdf.Sample.Domain.csproj">
+      <Project>{5ac7569e-54f3-45c8-9529-cfa514102859}</Project>
+      <Name>Bdf.Sample.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Application\Sample.Application.csproj">
+      <Project>{c9f59014-1212-484d-92f1-f47353cfaf8c}</Project>
+      <Name>Sample.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

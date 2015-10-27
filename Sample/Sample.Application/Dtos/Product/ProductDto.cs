@@ -16,5 +16,16 @@ namespace Sample.Application.Dtos.Product
         public bool? IsNew { get; set; }
 
         public CategoryDto Category { get; set; }
+
+        public string CategoryName
+        {
+            get
+            {
+                if (this.Category == null)
+                    return "(未分类)";
+                else
+                    return this.Category.Name;
+            }
+        }
     }
 }
